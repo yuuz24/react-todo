@@ -35,9 +35,7 @@ export default function TodoInsert({ onAdd }: Props) {
           flex: 1,
         }}
       ></input>
-      <button type="submit" style={{}}>
-        추가
-      </button>
+      <button type="submit">추가</button>
     </form>
   );
 }

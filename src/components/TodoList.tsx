@@ -9,7 +9,7 @@ type Props = {
 
 export default function TodoList({ todos, onToggle, onRemove }: Props) {
   return (
-    <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+    <ul style={{ padding: 0, marginRight: -15 }}>
       {todos.map((t) => (
         <TodoItem key={t.id} todo={t} onToggle={onToggle} onRemove={onRemove} />
       ))}

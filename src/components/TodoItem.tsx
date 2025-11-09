@@ -7,8 +7,6 @@ type Props = {
 };
 
 export default function TodoItem({ todo, onToggle, onRemove }: Props) {
-  const checkboxId = `${todo.id}`;
-
   return (
     <li
       style={{
@@ -19,13 +17,11 @@ export default function TodoItem({ todo, onToggle, onRemove }: Props) {
       }}
     >
       <input
-        id={checkboxId}
         type="checkbox"
         checked={todo.done}
         onChange={() => onToggle(todo.id)}
       />
       <label
-        htmlFor={checkboxId}
         style={{
           flex: 1,
           textDecoration: todo.done ? "line-through" : "none",
